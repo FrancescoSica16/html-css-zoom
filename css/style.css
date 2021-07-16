@@ -38,7 +38,6 @@ button{
 }
 .item-content{
     position: relative;
-    justify-content: space-evenly;
 }
 
 .item-content p{
