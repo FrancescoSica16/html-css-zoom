@@ -14,38 +14,28 @@ main{
 }
 
 header{
-    position: relative;
     height: 50px;
     background-color: rgb(0, 0, 0);
 }
 
-button{
+footer{
+    height: 60px;
     background-image: linear-gradient(rgb(80, 80, 80), rgb(31, 29, 29));
-    padding: 5px 20px;
-    border-radius: 10px;
-    color: white;
-    border: none;
 }
 
-.header-button{
-    position: absolute;
-    top: 5px;
-    right: 5px;
+/* Class tools */
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.content-wrapper{
-    max-height: 900px ;
+.fl{
+    float: left;
 }
-.item-content{
-    position: relative;
-}
-
-.item-content p{
-    position: absolute;
-    bottom: 2px;
-    right:1px;
-    background-color: rgba(37, 37, 37, 0.697);
-    font-size: 0.9em;
+.fr{
+    float: right;
 }
 
 .flex{
@@ -56,7 +46,115 @@ button{
     flex-wrap: wrap;
 }
 
+.justify-center{
+    justify-content: center ;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
 .margin-item{
     margin: 2px;
 }
+
+
+
+.text-center{
+    text-align: center;
+}
+
+.large-footer-button{
+
+}
+
+.margin-icon{
+    margin: 0 5px;
+}
+
+/* Button */
+
+header button{
+    background-image: linear-gradient(rgb(80, 80, 80), rgb(31, 29, 29));
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+.button-container{
+    text-align: right;
+    line-height: 50px;
+ }
+
+.footer-button{
+    color: white;
+    border: none;   
+    background:none;
+}
+
+.verde{
+    color: chartreuse;
+}
+
+.main-footer-button{  
+    
+    /* padding: 0px 20px;    */
+    font-size: 1.5em;
+    margin: 5px 20px 0;
+
+}
+
+.end-button{
+    color: rgb(235, 78, 78);
+    font-weight: bolder;
+    font-size: 0.9em;
+    background: rgb(87, 86, 86);
+    padding: 12px 20px;
+}
+
+.text-button{
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.arrow-button{
+    line-height: 2;
+}
+
+/*  */
+.item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.content-wrapper{
+    height: calc(100vh - 50px - 60px);
+    max-height: 900px ;
+    overflow-y: auto;
+
+}
+.item-content{
+    position: relative;
+    width: 300px;
+    height: 150px;
+}
+
+.item-content p{
+    position: absolute;
+    bottom: 2px;
+    right:1px;
+    background-color: rgba(37, 37, 37, 0.697);
+    font-size: 0.9em;
+}
+
+/* .footer-height{
+    height: 100px;
+} */
+
 
